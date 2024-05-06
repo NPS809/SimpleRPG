@@ -2,10 +2,10 @@
 {
     internal partial class ChestInventory : Form
     {
-        private Interactives.Chest chest;
+        private Objects.Chest chest;
         private RPGEntity entity;
 
-        internal ChestInventory(Interactives.Chest chest, RPGEntity entity)
+        internal ChestInventory(Objects.Chest chest, RPGEntity entity)
         {
             this.chest = chest;
             this.entity = entity;

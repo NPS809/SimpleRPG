@@ -47,7 +47,7 @@
             player_inventory.BorderStyle = BorderStyle.FixedSingle;
             player_inventory.Location = new Point(12, 35);
             player_inventory.Name = "player_inventory";
-            player_inventory.Size = new Size(337, 314);
+            player_inventory.Size = new Size(337, 250);
             player_inventory.TabIndex = 0;
             // 
             // label1
@@ -68,7 +68,7 @@
             pnlCraft.BorderStyle = BorderStyle.FixedSingle;
             pnlCraft.Location = new Point(355, 35);
             pnlCraft.Name = "pnlCraft";
-            pnlCraft.Size = new Size(241, 277);
+            pnlCraft.Size = new Size(241, 213);
             pnlCraft.TabIndex = 1;
             // 
             // label2
@@ -87,7 +87,7 @@
             right_hand.AutoSize = true;
             right_hand.BackColor = Color.FromArgb(35, 35, 35);
             right_hand.BorderStyle = BorderStyle.FixedSingle;
-            right_hand.Location = new Point(371, 393);
+            right_hand.Location = new Point(373, 333);
             right_hand.Name = "right_hand";
             right_hand.Size = new Size(223, 43);
             right_hand.TabIndex = 2;
@@ -97,7 +97,8 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label3.ForeColor = Color.FromArgb(255, 128, 0);
-            label3.Location = new Point(497, 369);
+            label3.Location = new Point(497, 306);
+            label3.Margin = new Padding(3);
             label3.Name = "label3";
             label3.Size = new Size(99, 21);
             label3.TabIndex = 3;
@@ -108,10 +109,10 @@
             btn_craft.FlatStyle = FlatStyle.Flat;
             btn_craft.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             btn_craft.ForeColor = Color.FromArgb(255, 128, 0);
-            btn_craft.Location = new Point(355, 318);
+            btn_craft.Location = new Point(355, 254);
             btn_craft.Margin = new Padding(3, 3, 3, 20);
             btn_craft.Name = "btn_craft";
-            btn_craft.Size = new Size(239, 31);
+            btn_craft.Size = new Size(241, 31);
             btn_craft.TabIndex = 0;
             btn_craft.TabStop = false;
             btn_craft.Text = "Создать";
@@ -123,7 +124,7 @@
             health.AutoSize = true;
             health.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             health.ForeColor = Color.FromArgb(255, 128, 0);
-            health.Location = new Point(12, 401);
+            health.Location = new Point(12, 341);
             health.Margin = new Padding(5);
             health.Name = "health";
             health.Size = new Size(74, 17);
@@ -132,9 +133,9 @@
             // 
             // healthbar
             // 
-            healthbar.Location = new Point(14, 426);
+            healthbar.Location = new Point(12, 366);
             healthbar.Name = "healthbar";
-            healthbar.Size = new Size(351, 10);
+            healthbar.Size = new Size(355, 10);
             healthbar.TabIndex = 9;
             // 
             // lbl_player_name
@@ -142,7 +143,7 @@
             lbl_player_name.AutoSize = true;
             lbl_player_name.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             lbl_player_name.ForeColor = Color.FromArgb(255, 128, 0);
-            lbl_player_name.Location = new Point(12, 352);
+            lbl_player_name.Location = new Point(12, 288);
             lbl_player_name.Name = "lbl_player_name";
             lbl_player_name.Size = new Size(160, 21);
             lbl_player_name.TabIndex = 10;
@@ -153,12 +154,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
-            ClientSize = new Size(608, 450);
+            ClientSize = new Size(608, 388);
+            Controls.Add(label3);
             Controls.Add(lbl_player_name);
             Controls.Add(healthbar);
             Controls.Add(health);
             Controls.Add(btn_craft);
-            Controls.Add(label3);
             Controls.Add(right_hand);
             Controls.Add(pnlCraft);
             Controls.Add(label2);

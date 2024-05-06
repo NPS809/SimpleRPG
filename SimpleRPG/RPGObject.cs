@@ -2,9 +2,6 @@
 
 namespace SimpleRPG
 {
-    /// <summary>
-    /// Класс RPGObject, Родитель всех игровых объектов, которые могу появиться на сцене
-    /// </summary>
     internal abstract class RPGObject
     {
         internal v2 position;
@@ -18,7 +15,6 @@ namespace SimpleRPG
         }
     }
 
-    
     internal abstract class RPGStatic : RPGObject
     {
         protected RPGStatic(

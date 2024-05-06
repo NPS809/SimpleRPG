@@ -1,6 +1,5 @@
 using SimpleRPG.Components;
-using SimpleRPG.Interactives;
-using SimpleRPG.Utils;
+using SimpleRPG.Interfaces;
 
 namespace SimpleRPG
 {
@@ -9,8 +8,11 @@ namespace SimpleRPG
         [STAThread]
         static void Main()
         {
+
+
+
             ApplicationConfiguration.Initialize();
-            Application.Run(new SimpleRPG());
+            Application.Run(new DialogueWindow());
         }
     }   
 
@@ -30,8 +32,8 @@ namespace SimpleRPG
             Entities.Player ply = new Entities.Player(new v2(2, 2));
             Entities.Stepper stepp = new Entities.Stepper(new v2(7, 5));
 
-            Chest chest = new Chest(new v2(1, 0));
-            Chest chest2 = new Chest(new v2(0, 1));
+            Objects.Chest chest = new Objects.Chest(new v2(1, 0));
+            Objects.Chest chest2 = new Objects.Chest(new v2(0, 1));
 
             #region Adding Items
             chest.inventory.Add(new Wood(100));
@@ -45,8 +47,6 @@ namespace SimpleRPG
             map.Add(chest2);
             map.Add(stepp);
             map.Add(idle);
-
-            idle.Idling();
 
             md.Draw();
         }

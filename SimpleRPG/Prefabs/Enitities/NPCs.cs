@@ -33,8 +33,6 @@
                     await Task.Delay(500);
                 }
             }
-            
-
         }
 
         internal override void OnInteract(RPGEntity interacter, RPGMap map)
@@ -71,7 +69,7 @@
 
         internal override void OnInteract(RPGEntity interacter, RPGMap map)
         {
-            MessageBox.Show("Just idle (‾◡◝)");
+            Idling();
         }
     }
 }

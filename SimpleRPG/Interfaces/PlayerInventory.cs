@@ -1,6 +1,4 @@
-﻿using SimpleRPG.Components;
-
-namespace SimpleRPG.Interfaces
+﻿namespace SimpleRPG.Interfaces
 {
     internal partial class PlayerInventory : Form
     {
@@ -13,8 +11,6 @@ namespace SimpleRPG.Interfaces
             this.player = player;
             InitializeComponent();
             UpdateTexts();
-
-            
         }
 
         private void UpdateTexts()

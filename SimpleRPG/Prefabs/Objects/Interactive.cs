@@ -1,4 +1,4 @@
-﻿namespace SimpleRPG.Interactives
+﻿namespace SimpleRPG.Objects
 {
     internal class Chest : RPGInteractic
     {
@@ -6,7 +6,7 @@
 
         internal Chest(v2 pos) : base(pos, Color.SandyBrown, "Chest") { }
 
-        internal override void OnInteract(RPGEntity interacter, RPGMap map) => 
+        internal override void OnInteract(RPGEntity interacter, RPGMap map) =>
             new ChestInventory(this, interacter).ShowDialog();
     }
 }

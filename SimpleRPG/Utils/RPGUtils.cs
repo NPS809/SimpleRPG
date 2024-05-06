@@ -1,5 +1,6 @@
 ﻿namespace SimpleRPG
 {
+
     internal static class RPGUtils
     {
         internal static void TIBetweenInventories(List<RPGItem> inventory_from, List<RPGItem> inventory_to, int index)
@@ -58,8 +59,8 @@
             BorderStyle = BorderStyle.FixedSingle;
             AutoSize = true;
             Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            MouseEnter += (sender, e) => BackColor = Color.FromArgb(60, 60, 60);
-            MouseLeave += (sender, e) => BackColor = Color.FromArgb(45, 45, 45);
+            MouseEnter += (sender, e) => BackColor = Color.FromArgb(45, 45, 45);
+            MouseLeave += (sender, e) => BackColor = Color.FromArgb(35, 35, 35);
             ContextMenuStrip cms = new ContextMenuStrip();
             ContextMenuStrip = cms;
         }
@@ -97,5 +98,19 @@
                 cols * cell_size + 16,
                 rows * cell_size + 39);
         }
+    }
+
+    internal struct DialogueMessage
+    {
+        internal string message = "";
+        internal List<string> answers = new List<string>();
+
+        public DialogueMessage() {}
+
+        public DialogueMessage(string message, List<string> answers) {
+            this.message = message;
+            this.answers = answers;
+        }
+        internal void Add(string text) => answers.Add(text);
     }
 }

@@ -45,7 +45,8 @@ namespace SimpleRPG.Entities
             }
             if (e.KeyCode == controls.rotate_right)
             {
-                if (direction == new v2(1, 0)) {
+                if (direction == new v2(1, 0))
+                {
                     direction = new v2(0, -1);
                     avatar.Text = "←";
                 }
@@ -87,7 +88,7 @@ namespace SimpleRPG.Entities
                 {
                     direction = new v2(1, 0);
                     avatar.Text = "↓";
-                    
+
                 }
                 map.drawer.Draw();
             }
@@ -96,8 +97,8 @@ namespace SimpleRPG.Entities
             {
                 next_pos.x += direction.x;
                 next_pos.y += direction.y;
-                if (next_pos.isInRange0toMax(map.drawer.screen_border) 
-                    && map.Get(next_pos) is null 
+                if (next_pos.isInRange0toMax(map.drawer.screen_border)
+                    && map.Get(next_pos) is null
                     && controls.can_move)
                     position = next_pos;
                 map.drawer.Draw();
