@@ -28,11 +28,17 @@ Some game objects types (You can add own):
 #### `RPGStatic`
 Static objects, for example: tree, rock.
 
+#### `RPGResource`
+Static, same as RPGStatic, but you can earn some resources from it.
+
 #### `RPGInteractic`
 Objects, which you can interact, for example: chest.
 
 #### `RPGEntity`
 Live creatures, which have health, inventory and right hand (only).
+
+#### `RPGNPC`
+NPCes.
 
 ### RPGItem
 Game items, there are some types too (and you can add own):
