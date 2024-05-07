@@ -155,6 +155,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
             ClientSize = new Size(608, 388);
+            ControlBox = false;
             Controls.Add(label3);
             Controls.Add(lbl_player_name);
             Controls.Add(healthbar);
@@ -167,6 +168,8 @@
             Controls.Add(player_inventory);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "PlayerInventory";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Инвентарь";

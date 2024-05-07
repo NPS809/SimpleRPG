@@ -46,7 +46,7 @@
             lcb_entity_inventory.Location = new Point(12, 35);
             lcb_entity_inventory.Name = "lcb_entity_inventory";
             lcb_entity_inventory.RightToLeft = RightToLeft.Yes;
-            lcb_entity_inventory.Size = new Size(200, 362);
+            lcb_entity_inventory.Size = new Size(200, 354);
             lcb_entity_inventory.TabIndex = 0;
             lcb_entity_inventory.TabStop = false;
             lcb_entity_inventory.SelectedIndexChanged += entity_inventory_SelectedIndexChanged;
@@ -60,7 +60,7 @@
             lcb_chest_inventory.FormattingEnabled = true;
             lcb_chest_inventory.Location = new Point(222, 35);
             lcb_chest_inventory.Name = "lcb_chest_inventory";
-            lcb_chest_inventory.Size = new Size(200, 362);
+            lcb_chest_inventory.Size = new Size(200, 354);
             lcb_chest_inventory.TabIndex = 1;
             lcb_chest_inventory.TabStop = false;
             lcb_chest_inventory.SelectedIndexChanged += chest_inventory_SelectedIndexChanged;
@@ -121,6 +121,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(35, 35, 35);
             ClientSize = new Size(434, 451);
+            ControlBox = false;
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(takeAllToEntity);
@@ -129,6 +130,8 @@
             Controls.Add(lcb_entity_inventory);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "ChestInventory";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Сундук";

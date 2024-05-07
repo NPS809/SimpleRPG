@@ -2,7 +2,10 @@
 {
     internal partial class DialogueWindow : Form
     {
-        internal DialogueWindow() => InitializeComponent();
+        internal DialogueWindow() {
+            InitializeComponent();
+        }
+        
 
         internal async void PlayDialogue(DialogueMessage dm)
         {

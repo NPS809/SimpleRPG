@@ -58,9 +58,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
             ClientSize = new Size(284, 411);
+            ControlBox = false;
             Controls.Add(label1);
             Controls.Add(acrafts_pnl);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AvailableCrafts";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Доступные крафты";

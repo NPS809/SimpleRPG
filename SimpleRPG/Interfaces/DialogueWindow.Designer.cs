@@ -53,9 +53,9 @@
             // 
             pictureBox1.BackColor = Color.FromArgb(35, 35, 35);
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(538, 39);
+            pictureBox1.Location = new Point(472, 39);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 313);
+            pictureBox1.Size = new Size(200, 296);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -64,9 +64,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             button1.ForeColor = Color.FromArgb(255, 128, 0);
-            button1.Location = new Point(538, 358);
+            button1.Location = new Point(472, 341);
             button1.Name = "button1";
-            button1.Size = new Size(250, 37);
+            button1.Size = new Size(200, 37);
             button1.TabIndex = 4;
             button1.Text = "Торговать";
             button1.UseVisualStyleBackColor = true;
@@ -76,9 +76,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             button2.ForeColor = Color.FromArgb(255, 128, 0);
-            button2.Location = new Point(538, 401);
+            button2.Location = new Point(472, 384);
             button2.Name = "button2";
-            button2.Size = new Size(250, 37);
+            button2.Size = new Size(200, 37);
             button2.TabIndex = 5;
             button2.Text = "Выход";
             button2.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             textbox.Multiline = true;
             textbox.Name = "textbox";
             textbox.ReadOnly = true;
-            textbox.Size = new Size(520, 250);
+            textbox.Size = new Size(454, 233);
             textbox.TabIndex = 6;
             // 
             // answers
@@ -101,9 +101,9 @@
             answers.BackColor = Color.FromArgb(35, 35, 35);
             answers.BorderStyle = BorderStyle.FixedSingle;
             answers.FlowDirection = FlowDirection.TopDown;
-            answers.Location = new Point(12, 295);
+            answers.Location = new Point(12, 278);
             answers.Name = "answers";
-            answers.Size = new Size(520, 143);
+            answers.Size = new Size(454, 143);
             answers.TabIndex = 7;
             // 
             // DialogueWindow
@@ -111,13 +111,16 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(684, 433);
+            ControlBox = false;
             Controls.Add(answers);
             Controls.Add(textbox);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "DialogueWindow";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Болтовнёжка";

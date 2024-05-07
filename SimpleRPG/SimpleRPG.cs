@@ -8,11 +8,8 @@ namespace SimpleRPG
         [STAThread]
         static void Main()
         {
-
-
-
             ApplicationConfiguration.Initialize();
-            Application.Run(new DialogueWindow());
+            Application.Run(new SimpleRPG());
         }
     }   
 
@@ -24,6 +21,8 @@ namespace SimpleRPG
         internal SimpleRPG()
         {
             InitializeComponent();
+
+            MaximizeBox = false;
 
             md = new MapDrawer(this);
             map = new RPGMap(md);
@@ -55,6 +54,12 @@ namespace SimpleRPG
         private void KeyHandler(object sender, KeyEventArgs e) {
             Text = $"Pressed key: {e.KeyCode}";
             map?.KeyHandler(e);
+            if (e.KeyCode == Keys.F1)
+            {
+                new SpeechWindow(this, "Привет!", "Внутренний голос").ShowDialog();
+                new SpeechWindow(this, "Я - Твой внутренний голос", "Внутренний голос").ShowDialog();
+            }
+                
         }
 
     }
