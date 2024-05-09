@@ -30,21 +30,49 @@ Static objects, for example: tree, rock.
 
 #### `RPGResource`
 Static, same as RPGStatic, but you can earn some resources from it.
+It has 3 fields peculiar only to him.
+```csharp
+int current_health;
+int max_health;
+RPGItem finite_resource; // Resource, that will be drop from your object
+```
 
 #### `RPGInteractic`
 Objects, which you can interact, for example: chest.
 
+`OnInteract` method, which takes 2 argument:
+```csharp
+abstract void OnInteract(RPGEntity interacter, RPGMap map);
+```
+
 #### `RPGEntity`
 Live creatures, which have health, inventory and right hand (only).
+Parent of all creatures.
+```csharp
+int current_health;
+int max_health;
+RPGUsable? right_hand;
+List<RPGItem> inventory;
+```
 
 #### `RPGNPC`
 NPCes.
+It is child of RPGEntity, but has OnInteract method, same as a RPGInteractic's
 
 ### RPGItem
 Game items, there are some types too (and you can add own):
 
+By default, it has name and count (and description, but it is not matter)
+
+Important, his every child must has `Copy` method. 
+
 #### `RPGUsable` 
 Items, which you can use by taking in right hand and clicking 'space', if it is player.
+
+It has method `OnUse`:
+```csharp
+abstract void OnUse(RPGEntity user, RPGMap map);
+```
 
 #### `RPGComponent`
 Items, which will be use in crafts.
