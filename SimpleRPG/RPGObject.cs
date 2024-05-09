@@ -27,16 +27,19 @@ namespace SimpleRPG
     {
         internal int current_health;
         internal int max_health;
+        internal RPGItem finite_resource;
 
         protected RPGResource(
             v2 position,
             Color color,
             string name,
             int c_health,
-            int m_health) : base(position, color, name) {
+            int m_health,
+            RPGItem f_resource) : base(position, color, name) {
 
             current_health = c_health;
             max_health = m_health;
+            finite_resource = f_resource;
         } 
     }
 
