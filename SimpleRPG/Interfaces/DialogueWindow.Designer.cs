@@ -31,7 +31,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
-            button2 = new Button();
+            btn_exit = new Button();
             textbox = new TextBox();
             answers = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -71,17 +71,18 @@
             button1.Text = "Торговать";
             button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_exit
             // 
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button2.ForeColor = Color.FromArgb(255, 128, 0);
-            button2.Location = new Point(472, 384);
-            button2.Name = "button2";
-            button2.Size = new Size(200, 37);
-            button2.TabIndex = 5;
-            button2.Text = "Выход";
-            button2.UseVisualStyleBackColor = true;
+            btn_exit.FlatStyle = FlatStyle.Flat;
+            btn_exit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btn_exit.ForeColor = Color.FromArgb(255, 128, 0);
+            btn_exit.Location = new Point(472, 384);
+            btn_exit.Name = "btn_exit";
+            btn_exit.Size = new Size(200, 37);
+            btn_exit.TabIndex = 5;
+            btn_exit.Text = "Выход";
+            btn_exit.UseVisualStyleBackColor = true;
+            btn_exit.Click += btn_exit_Click;
             // 
             // textbox
             // 
@@ -115,7 +116,7 @@
             ControlBox = false;
             Controls.Add(answers);
             Controls.Add(textbox);
-            Controls.Add(button2);
+            Controls.Add(btn_exit);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -134,7 +135,7 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Button button1;
-        private Button button2;
+        private Button btn_exit;
         private TextBox textbox;
         private FlowLayoutPanel answers;
     }

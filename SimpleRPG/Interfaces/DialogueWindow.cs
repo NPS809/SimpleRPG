@@ -2,10 +2,12 @@
 {
     internal partial class DialogueWindow : Form
     {
-        internal DialogueWindow() {
+        internal DialogueWindow(DialogueMessage dm)
+        {
             InitializeComponent();
+            PlayDialogue(dm);
         }
-        
+
 
         internal async void PlayDialogue(DialogueMessage dm)
         {
@@ -24,7 +26,8 @@
         private async void AddAnswer(string text)
         {
             InvItemLabel iil = new InvItemLabel("");
-            iil.Click += (sender, e) => { 
+            iil.Click += (sender, e) =>
+            {
 
             };
             iil.Margin = new Padding(5, 5, 5, 0);
@@ -34,6 +37,11 @@
                 iil.Text += c;
                 await Task.Delay(25);
             }
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 

@@ -56,6 +56,14 @@ namespace SimpleRPG
             map?.KeyHandler(e);
             if (e.KeyCode == Keys.F1)
             {
+                DialogueMessage dm = new DialogueMessage("Привет, я твой внутренный голос!", new List<string>()
+                {
+                    "Я гей",
+                    "Я не гей"
+                });
+
+
+
                 new SpeechWindow(this, "Привет!", "Внутренний голос").ShowDialog();
                 new SpeechWindow(this, "Я - Твой внутренний голос", "Внутренний голос").ShowDialog();
             }
