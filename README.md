@@ -55,4 +55,5 @@ Items, which will be use in crafts.
 - Tab Menu (inventory and craft (but crafting not work for now))
 - MapDrawer (draws objects on screen, and dont flashing like before)
 - Crafting System
+- Simple Dialogue and Speech window
 
